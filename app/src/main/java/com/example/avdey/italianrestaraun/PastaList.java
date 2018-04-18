@@ -17,7 +17,7 @@ public class PastaList extends ListActivity {
 
         ListView pastaList = getListView();
         ArrayAdapter<Pasta> list = new ArrayAdapter<Pasta>(this,
-                android.R.layout.activity_list_item, Pasta.pastaList);
+                android.R.layout.simple_list_item_1, Pasta.pastaList);
 
         pastaList.setAdapter(list);
     }

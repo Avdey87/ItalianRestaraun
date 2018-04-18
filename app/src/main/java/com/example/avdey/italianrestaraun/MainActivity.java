@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 
 
         ListView listView = findViewById(R.id.list_option);
-        listView.setOnItemClickListener(onItemClickListener);
+        listView.setOnItemClickListener(itemClickListener);
 
     }
 }
